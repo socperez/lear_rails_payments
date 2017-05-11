@@ -11,7 +11,6 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
   <body>
 
@@ -22,9 +21,8 @@
         </div>
         <%= image_tag('header-image.jpg', id:"content-head-img", alt: "Learn Rails!") %>
     </header>
+    <%= yield %>
   </div>
-  
-      <%= yield %>
   </body>
 </html>
 

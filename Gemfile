@@ -17,8 +17,12 @@ gem 'sqlite3', group: [:development, :test]
 # postgres for production database
 gem'pg', group: :production
 
-#12 factor for heroku
+# 12 factor for heroku
 gem 'rails_12factor', group: :production
+
+# strip for taking payments
+gem 'stripe', :git =>'https://github.com/stripe/stripe-ruby'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
