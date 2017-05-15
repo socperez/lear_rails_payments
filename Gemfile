@@ -34,6 +34,13 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+
+#activeadmin for admin system
+gem 'activeadmin', github: 'activeadmin'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+
+gem 'devise'
+
 gem 'bootstrap-sass'
 
 gem 'letter_opener', group: :development
