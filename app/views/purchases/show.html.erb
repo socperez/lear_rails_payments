@@ -6,14 +6,14 @@
 			<p><strong>RECEIPT</strong></p>
 			<div id="receipt-details" class="row clearfix">
 				<div class="col-sm-8 receipt-left">
-					<p><strong class="font-weight-heavy"><%= @product.title %></strong><br/> <span class="font-weight-light"><%= product.subtitle %></span></p>
+					<p><strong class="font-weight-heavy"><%= @product.title %></strong><br/> <span class="font-weight-light"><%= @product.subtitle %></span></p>
 				</div>
 				<div class="col-sm-4">
-					$<% @product.price %>
+					$<%= @product.price %>
 				</div>
 			</div>
 
-			<a href="https://s3-us-west-2.amazonaws.com/soc-learnapp-bucket/NightofWorship-43.jpg"><button type="button" class="btn btn-success btn-xs">DOWNLOAD</button></a>
+			<a href="https://s3-us-west-2.amazonaws.com/soc-learnapp-bucket/kitty.jpg"><button type="button" class="btn btn-success btn-xs">DOWNLOAD</button></a>
 			<footer id="receipt-footer">
 				<small>Your purchase is complete. We hope you enjoy it!</small>
 			</footer>
