@@ -4,12 +4,12 @@ class ChargesController < ApplicationController
 	  # Amount in cents
 	  Stripe.api_key = 'sk_test_czU1OAGxsdMVN9INdxzSUjZA'
 
-	  product = Product.find_by_sku("kittyOne")
+	  product = Product.find(params[:product_id])
 
 	  customer = Stripe::Customer.create(
 	    :email => params[:stripeEmail],
 	    :source  => params[:stripeToken],
-	    :plan => "CAT"
+	    :plan => product.sku
 	  )
 
 		purchase = Purchase.create(email: params[:stripeEmail], card: params[:stripeToken], amount: product.price_in_cents, 
